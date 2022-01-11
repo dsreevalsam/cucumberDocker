@@ -19,10 +19,11 @@ Pre Requisites: Docker has to be installed (https://docs.docker.com/engine/insta
 2. Go to project root folder
 3. Start/Run Docker engine
 4. Note: If using a windows machine, uncomment the line containing: "RUN dos2unix healthcheck.sh"
-5. Build docker image usign command: "docker build -t mytheresa/demo ."
-6. run docker using docker-compose: "docker-compose up"
-7. Use "docker-compose down" to shut down the network
-8. Browsers and url can be changed by updating BROWSER and/or URL environment variables in docker-compose.yaml
+5. Package the tests using: "mvn clean package -DskipTests"
+6. Build docker image usign command: "docker build -t mytheresa/demo ."
+7. run docker using docker-compose: "docker-compose up"
+8. Use "docker-compose down" to shut down the network
+9. Browsers and url can be changed by updating BROWSER and/or URL environment variables in docker-compose.yaml
 
 
 ##Tests
