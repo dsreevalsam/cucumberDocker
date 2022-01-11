@@ -26,7 +26,7 @@ Pre Requisites: Docker has to be installed (https://docs.docker.com/engine/insta
 9. Browsers and url can be changed by updating BROWSER and/or URL environment variables in docker-compose.yaml
 
 
-##Tests
+## Tests
 
 Feature: General Validations on Application Launch and Login
   Scenario: Launch website and check for js or url errors
