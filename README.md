@@ -29,19 +29,19 @@ Pre Requisites: Docker has to be installed (https://docs.docker.com/engine/insta
 ## Tests
 
 Feature: General Validations on Application Launch and Login  
-  Scenario: Launch website and check for js or url errors  
-    Given User launches MyTheresa  
-		This step launches mytheresa web portal  
-    Then Check if there are any javascript errors  
-		This step checks if there are any js errors. Currently this tes will only work when browser used is chrome  
-    And Visit all urls and Validate Status Codes  
-		This test gets all the url's from the home page and hits them using restassured and validates status code to be 2xx or 3xx  
+  &nbsp;Scenario: Launch website and check for js or url errors  
+    &ensp;Given User launches MyTheresa  
+		&ensp;&ensp;This step launches mytheresa web portal  
+    &ensp;Then Check if there are any javascript errors  
+		&ensp;&ensp;This step checks if there are any js errors. Currently this tes will only work when browser used is chrome  
+    &ensp;And Visit all urls and Validate Status Codes  
+		&ensp;&ensp;This test gets all the url's from the home page and hits them using restassured and validates status code to be 2xx or 3xx  
 		  
 Feature: User Account  
-  Scenario: Validate user is able to login to MyTheresa  
-  	Given User launches MyTheresa  
-  	Then Login with email "test123@test123.com"  
-		This step is used to login to MyAccount using the provided email. Encrypted Password is fetch from the properties file and then decrypted  
-  	And Validate login was successful  
-		Validated header in next page to assert that login was successful  
+  &nbsp;Scenario: Validate user is able to login to MyTheresa  
+  	&ensp;Given User launches MyTheresa  
+  	&ensp;Then Login with email "test123@test123.com"  
+		&ensp;&ensp;This step is used to login to MyAccount using the provided email. Encrypted Password is fetch from the properties file and then decrypted  
+  	&ensp;And Validate login was successful  
+		&ensp;&ensp;Validated header in next page to assert that login was successful  
 
