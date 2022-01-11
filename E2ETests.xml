@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="End to End" parallel="tests" thread-count="2">
+	<parameter name="url" value="${URL}" />
+	<test name="Purchase Products-2" preserve-order="true">
+		<classes>
+			<class name="com.tests.runner.RunCucumberTests"></class>
+		</classes>
+	</test>
+
+</suite>
+
+
+
